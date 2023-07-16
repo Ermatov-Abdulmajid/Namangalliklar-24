@@ -98,6 +98,10 @@ img {
     border-radius: 60px;
     background-color: #FFF;
     border: #fff;
+    background-image: url("../img/Mask.svg");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 15px center;
 }
 
 .lang {
@@ -680,10 +684,6 @@ img {
     margin-bottom: 10px;
 }
 
-.input-3 {
-    padding: 18px 526px 18px 20px;
-}
-
 .input-1 {
     padding: 18px 150px 18px 20px;
     margin-right: 10px;
@@ -706,6 +706,7 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.20);
     background-color: #FFF;
     margin-bottom: 10px;
+    padding: 18px 300px 18px 20px;
 }
 
 .contact-text-area {

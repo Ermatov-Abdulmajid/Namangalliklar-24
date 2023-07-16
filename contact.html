@@ -60,7 +60,7 @@
                     </ul>
                 </nav>
             </div>
-            
+    </header>
 
     <!-- MAIN -->
 <main class="main-content">
@@ -68,17 +68,17 @@
         <div class="contact-div-1">
             <div>
                 <h1 class="contact-heading">Напишите нам</h1>
-        <form class="form" action="#" method="get">
+        <form class="form" action="https://echo.htmlacademy.ru" method="get">
                     <span class="contact-span-1">
-                        <input class="input-1" type="text" placeholder="Имя" id="Имя">
-                        <input class="input-2" type="tel" placeholder="Номер телефона" id="Номер телефона">
+                        <input class="input-1" type="text" placeholder="Имя" id="Имя" name="text" required>
+                        <input class="input-2" type="tel" placeholder="Номер телефона" id="Номер телефона" name="tel" required>
                     </span>
                     <span class="contact-span-2">
-                        <input class="input-3" type="email" placeholder="Электронная почта">
-                        <textarea class="contact-text-area" name="text" placeholder="Текст"  id="" cols="30" rows="10"></textarea>
+                        <input class="input-3" type="email" placeholder="Электронная почта" name="email" required>
+                        <textarea class="contact-text-area" name="text" placeholder="Текст"  id="" cols="30" rows="10" required></textarea>
                     </span>
                     <span class="contanct-span-3">
-                        <button class="contact-button" type="submit">Отправить</button>
+                        <button class="contact-button" type="submit" name="message">Отправить</button>
                     </span>
         </form>
         </div>
