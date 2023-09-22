@@ -775,3 +775,79 @@ img {
 .contact-text:last-child {
     border-bottom: 0px;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0 , 0.4);
+}
+
+.modal-open {
+    display: block;
+}
+
+.modal-wrapper {
+    width: 100%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.modal-wrapper-inner {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.modal-text {
+    color: #000;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; 
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.modal-link {
+    text-decoration: none;
+    text-align: center;
+    border: transparent;
+    border-radius: 10px;
+    background-color: #f78b3b;
+    padding: 15px 40px;
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.modal-close-icon {
+    display: block;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
