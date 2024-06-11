@@ -1,11 +1,24 @@
-const elmodal = document.querySelector('.modal')
-const elmodalCloseIcon = document.querySelector('.modal-close-icon');
+const elModal = document.querySelector(".modal");
+const elModalClose = document.querySelector(".js-modal-close");
 
-if (elmodal) {
-    elmodalCloseIcon.addEventListener('click' , function () {
-        elmodal.classList.remove('modal');
-    });
+const elSiteHeader = document.querySelector(".site-header");
+const elSiteHeaderToggler = elSiteHeader.querySelector(
+  ".js-site-header-toggler"
+);
+
+if (elSiteHeaderToggler) {
+  elSiteHeaderToggler.addEventListener("click", function () {
+    elSiteHeader.classList.toggle("site-header-open");
+  });
 }
-setTimeout(function ()  {
-    elmodal.classList.add('modal-open')
-}, 4000);
+
+if (elModalClose) {
+  elModalClose.addEventListener("click", function () {
+    elModal.classList.remove("modal-open");
+  });
+}
+
+// 30 soniyadan keyin modalni ko'rsati -> modal + modal-open
+setTimeout(function () {
+  elModal.classList.add("modal-open");
+}, 30000);
